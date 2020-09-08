@@ -1,4 +1,3 @@
-import 'feed_screen.dart';
 import 'package:flutter/material.dart';
 import 'signup_screen.dart';
 import 'login_screen.dart';
@@ -38,18 +37,20 @@ class _WelcomeScreenState extends State<WelcomeScreen>
           children: <Widget>[
             Row(
               children: <Widget>[
-//                Hero(
-//                  tag: 'logo',
-//                  child: Container(
-//                    child: Image.asset('images/pokemon_logo.png'),
-//                    height: animation.value * 50,
-//                  ),
-//                ),
+                Hero(
+                  tag: 'logo',
+                  child: Container(
+                    child: Image.asset('images/Pilgrimage_logo.png'),
+                    height: animation.value * 50,
+                  ),
+                ),
                 Center(
                   child: Text(
                     "Pilgrimage",
-                    style:
-                        TextStyle(fontSize: 40.0, fontWeight: FontWeight.w900),
+                    style: TextStyle(
+                        fontSize: 40.0,
+                        fontWeight: FontWeight.w500,
+                        fontFamily: "Pacifico"),
                   ),
                 ),
               ],
@@ -66,7 +67,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
             ),
             RoundButton(
               title: 'SignUp',
-              colour: Colors.red.shade500,
+              colour: Colors.tealAccent.shade700,
               onPressed: () {
                 Navigator.pushNamed(context, SignUpScreen.id);
               },

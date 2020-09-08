@@ -34,19 +34,13 @@ class _LoginScreenState extends State<LoginScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Center(
-                child: Text(
-                  "Pilgrimage",
-                  style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.w900),
+              Hero(
+                tag: 'logo',
+                child: Container(
+                  height: 100.0,
+                  child: Image.asset('images/Pilgrimage_logo.png'),
                 ),
               ),
-//              Hero(
-//                tag: 'logo',
-//                child: Container(
-//                  height: 100.0,
-//                  child: Image.asset('images/pokemon_logo.png'),
-//                ),
-//              ),
               SizedBox(
                 height: 48.0,
               ),

@@ -33,25 +33,19 @@ class _SignUpScreenState extends State<SignUpScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Center(
-                child: Text(
-                  "Pilgrimage",
-                  style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.w900),
+              Hero(
+                tag: 'logo',
+                child: Container(
+                  height: 100.0,
+                  child: Image.asset('images/Pilgrimage_logo.png'),
                 ),
               ),
-//              Hero(
-//                tag: 'logo',
-//                child: Container(
-//                  height: 100.0,
-//                  child: Image.asset('images/pokemon_logo.png'),
-//                ),
-//              ),
               SizedBox(
                 height: 48.0,
               ),
               RoundEntryEmail(
                 title: 'Enter your email',
-                colour: Colors.red.shade500,
+                colour: Colors.tealAccent.shade700,
                 onChanged: (value) {
                   email = value;
                 },
@@ -61,7 +55,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               ),
               RoundEntryPassword(
                 title: 'Enter your password',
-                colour: Colors.red.shade500,
+                colour: Colors.tealAccent.shade700,
                 onChanged: (value) {
                   password = value;
                 },
@@ -71,7 +65,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               ),
               RoundButton(
                   title: 'SignUp',
-                  colour: Colors.red.shade500,
+                  colour: Colors.tealAccent.shade700,
                   onPressed: () async {
                     setState(() {
                       loadingSpinner = true;

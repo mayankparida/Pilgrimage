@@ -33,7 +33,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
     return Scaffold(
       body: Center(
         child: SpinKitDualRing(
-          color: Colors.redAccent,
+          color: Colors.tealAccent.shade700,
           size: 100.0,
         ),
       ),

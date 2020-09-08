@@ -21,7 +21,7 @@ class _MyAppState extends State<MyApp> {
           textTheme: TextTheme(
             body1: TextStyle(color: Colors.white),
           ),
-          primaryColor: Colors.redAccent),
+          primaryColor: Colors.tealAccent.shade700),
       initialRoute: LoadingScreen.id, //Initial route of the app
       //All possible routes in the app
       routes: {
