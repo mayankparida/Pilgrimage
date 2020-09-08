@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1088197024515",
+    "firebase_url": "https://pilgrimage-c160b.firebaseio.com",
+    "project_id": "pilgrimage-c160b",
+    "storage_bucket": "pilgrimage-c160b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088197024515:android:37ff2dc3a6e04561356736",
+        "android_client_info": {
+          "package_name": "pilgrimage.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088197024515-g0qivlu186lamg35ls4n25drv2kuhof2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8sDyM_sECu3LekqvIjrIzF-kn9sOA-jE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088197024515-g0qivlu186lamg35ls4n25drv2kuhof2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
