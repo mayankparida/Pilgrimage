@@ -1,5 +1,6 @@
 # Pilgrimage
-A flutter project that tries to implement the basic features of a social media app like Instagram. The basic concepts implemented in this project :
+A flutter project that tries to implement the basic features of a social media app like Instagram. The app allows you to securely log in, check out the amazing feed of different users, upload your favourite pictures for the world to see through your gallery or your camera with its elegant and friendly UI.
+The basic concepts implemented in this project :
 * Authenticate users using an authentication provider like Firebase
 * Develop a gorgeous home page which lets users scroll away endlessly on their favourite pictures
 * Add a settings page that can be accessed using a navigation system like a side drawer or a tab layout
