@@ -1,16 +1,42 @@
-# com
+# Pilgrimage
+A flutter project that tries to implement the basic features of a social media app like Instagram. The basic concepts implemented in this project :
+* Authenticate users using an authentication provider like Firebase
+* Develop a gorgeous home page which lets users scroll away endlessly on their favourite pictures
+* Add a settings page that can be accessed using a navigation system like a side drawer or a tab layout
+* Use Firebase to store image metadata
+* Allow users to like images
+* Store the images in an external blob storage service like Firebase
+* Allow the user to capture and upload images without leaving the app
 
-A new Flutter application.
+## Prerequisites:
+For running this script you'll need:
+* Android Studio
+* Android Emulator (In Android Studio) or Android device
+* Flutter Plugin
 
-## Getting Started
+## Installing And Running:
+* To download Android Studio [Click Here](https://developer.android.com/studio)
+* Go to the "Configure Menu" in Android Studio and select "plugins". Click on browse repositories and search for the flutter plugin and install it.
+* Copy the Github project repository url link. Select option "Get from version control" in Android Studio and select "Git" as version control. Paste the url link and select "Clone".
+* After the cloning process is complete ,open the project seperately in Android Studio by selecting "Open an existing Android Studio project" in the location where you have cloned the project.
+* After the project opens, go to the main.dart file and click on get dependencies.
+* Connect your phone to your laptop or desktop, or select the android emulator in Android Studio.
+* Click on run to see the application run on your device.
 
-This project is a starting point for a Flutter application.
+## Built With:
+* Android Studio
+* Dart 
+* Flutter
 
-A few resources to get you started if this is your first Flutter project:
+## Final Look:
+This is how the application looks when you run it.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+* [Video of complete app run](https://drive.google.com/file/d/1G2T9Nit7m3Rl0XMCi5Jt9rEIo-ZirO0-/view?usp=sharing)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### OR
+
+![Pilgrimage_gif](https://user-images.githubusercontent.com/68542629/93004540-88921b00-f565-11ea-8f4a-629fd51a42e4.gif)
+
+
+## Authors:
+* [Mayank Parida](https://www.linkedin.com/in/mayankparida18/)
