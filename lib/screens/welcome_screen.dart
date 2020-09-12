@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'signup_screen.dart';
 import 'login_screen.dart';
-import 'package:com/componenets/buttons.dart';
+import 'package:com/componenets/resources.dart';
 
 class WelcomeScreen extends StatefulWidget {
   static String id = 'welcome_screen';
@@ -11,8 +11,10 @@ class WelcomeScreen extends StatefulWidget {
 
 class _WelcomeScreenState extends State<WelcomeScreen>
     with SingleTickerProviderStateMixin {
+  //Animation for the app logo
   AnimationController controller;
   Animation animation;
+
   @override
   void initState() {
     super.initState();
@@ -38,6 +40,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
             Row(
               children: <Widget>[
                 Hero(
+                  //Hero tag for Hero Animation on Logo
                   tag: 'logo',
                   child: Container(
                     child: Image.asset('images/Pilgrimage_logo.png'),
@@ -58,6 +61,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
             SizedBox(
               height: 48.0,
             ),
+            //Semi Custom Round Button : Code present in resources
             RoundButton(
               title: 'Login',
               colour: Colors.blue.shade900,
@@ -65,6 +69,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                 Navigator.pushNamed(context, LoginScreen.id);
               },
             ),
+            //Semi Custom Round Button : Code present in resources
             RoundButton(
               title: 'SignUp',
               colour: Colors.tealAccent.shade700,

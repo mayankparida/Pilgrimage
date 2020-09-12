@@ -1,5 +1,4 @@
 import 'package:com/screens/feed_screen.dart';
-
 import 'welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -12,7 +11,9 @@ class LoadingScreen extends StatefulWidget {
 }
 
 class _LoadingScreenState extends State<LoadingScreen> {
+  //Checks for last stored email to keep user logged in
   getemail() async {
+    //Shared Preferences used to store email of last logged in user and stays even after app is destroyed
     SharedPreferences prefs = await SharedPreferences.getInstance();
     var email = prefs.getString('email');
     if (email != null) {

@@ -1,7 +1,7 @@
 import 'feed_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:com/componenets/buttons.dart';
+import 'package:com/componenets/resources.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -17,6 +17,7 @@ class _LoginScreenState extends State<LoginScreen> {
   String email;
   String password;
   String message = '';
+  //Using Shared Preferences to store mail of last logged in user
   storeemail() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     prefs.setString("email", email);
@@ -35,6 +36,7 @@ class _LoginScreenState extends State<LoginScreen> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Hero(
+                //Hero tag for Hero Animation on Logo
                 tag: 'logo',
                 child: Container(
                   height: 100.0,
@@ -44,6 +46,7 @@ class _LoginScreenState extends State<LoginScreen> {
               SizedBox(
                 height: 48.0,
               ),
+              //Semi Custom Text Field : Code present in resources
               RoundEntryEmail(
                 title: 'Enter your email',
                 colour: Colors.blue.shade900,
@@ -54,6 +57,7 @@ class _LoginScreenState extends State<LoginScreen> {
               SizedBox(
                 height: 8.0,
               ),
+              //Semi Custom Text Field : Code present in resources
               RoundEntryPassword(
                 title: 'Enter your password',
                 colour: Colors.blue.shade900,
@@ -64,6 +68,7 @@ class _LoginScreenState extends State<LoginScreen> {
               SizedBox(
                 height: 8.0,
               ),
+              //Error message in case of invalid email input
               Center(
                 child: Text(
                   message,
@@ -73,9 +78,11 @@ class _LoginScreenState extends State<LoginScreen> {
               SizedBox(
                 height: 24.0,
               ),
+              //Semi Custom Round Button : Code present in resources
               RoundButton(
                   title: 'Login',
                   colour: Colors.blue.shade900,
+                  //Authenticate user and push user to Feed Screen
                   onPressed: () async {
                     setState(() {
                       loadingSpinner = true;
