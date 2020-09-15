@@ -38,6 +38,10 @@ This is how the application looks when you run it.
 
 ![Pilgrimage_gif](https://user-images.githubusercontent.com/68542629/93004540-88921b00-f565-11ea-8f4a-629fd51a42e4.gif)
 
+### OR
+
+[PilgrimageApp.apk](https://drive.google.com/file/d/1U9dJTmXIrKkK3ar_15pjK4NNPegIqUfz/view?usp=sharing)
+
 
 ## Authors:
 * [Mayank Parida](https://www.linkedin.com/in/mayankparida18/)
